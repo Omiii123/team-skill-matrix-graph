@@ -15,7 +15,13 @@ const connectionRoutes = require('./routes/connections');
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    'https://team-skill-matrix-graph-8qqrd2b6b-omkarametwad61-1466s-projects.vercel.app',
+    'http://localhost:3000'
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 // Connect to MongoDB
