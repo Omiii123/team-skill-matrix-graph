@@ -17,7 +17,7 @@ const app = express();
 // Middleware
 app.use(cors({
   origin: [
-    'https://team-skill-matrix-graph-8qqrd2b6b-omkarametwad61-1466s-projects.vercel.app',
+    'https://team-skill-matrix-graph-mu.vercel.app',
     'http://localhost:3000'
   ],
   credentials: true
